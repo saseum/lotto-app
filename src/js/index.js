@@ -18,7 +18,7 @@ let LOTTO = {
     fn_five_day_result_data : function() {
         let _this = this;
 
-        const url = '/lotto/perpCal.json?date=' + new Date();
+        const url = '/lotto-app/perpCal.json?date=' + new Date();
         const xhr = new XMLHttpRequest();
 
         xhr.open('GET', url, true);
@@ -40,7 +40,7 @@ let LOTTO = {
 
         xhr.send();
 
-        const url2 = '/lotto/fiveResult.json?date=' + new Date();
+        const url2 = '/lotto-app/fiveResult.json?date=' + new Date();
         const xhr2 = new XMLHttpRequest();
 
         xhr2.open('GET', url2, true);
@@ -66,7 +66,7 @@ let LOTTO = {
     , fn_lotto_turn_change : function() {
         let _this = this;
 
-        const url = '/lotto/turnHistory.json?date=' + new Date();
+        const url = '/lotto-app/turnHistory.json?date=' + new Date();
         const xhr = new XMLHttpRequest();
 
         xhr.open('GET', url, true);
@@ -674,7 +674,7 @@ let LOTTO = {
 
         _this.fn_get_turn_list();
 
-        const url = '/lotto/lottoStore.json?date=' + new Date();
+        const url = '/lotto-app/lottoStore.json?date=' + new Date();
         const xhr = new XMLHttpRequest();
 
         xhr.open('GET', url, true);
